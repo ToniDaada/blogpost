@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Creating some custom properties */
+/* So like each of these these properties in the ':root' can be called so that the values don't have to be repeated all the time */
+:root{
+    --light-color: #fff;
+    --light-color-alt:#afb6cd;
+    --primary-background-color: #131417;
+    --secondary-background-color: #252830;
+    --hover-light-color: var(--light-color);
+    --hover-dark-color: var(--primary-background-color);
+    --gradient-color: linear-gradient(
+        115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+    --transparent-light-color: rgba(255,255,255,.05);
+    --transparent-dark-color: rgba(0,0,0,.75);
+    --font-family: 'Poppins', sans-serif;
+    --font-size-xsm: 1.2rem;
+    --font-size-sm: 1.6rem;
+    --font-size-md: 2.4rem;
+    --font-size-lg: 3rem;
+    --font-size-xl: 4rem;
+    --gap: 2rem;
+    --margin-sm: 2rem;
+    --margin-md: 3rem;
+    --item-min-height-sm: 20rem;
+    --item-min-height-md: 30rem;
+}
+
+
+/* Creating some base styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /* font-size: 10px; */
+    font-size: 62.5%;
+}
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm);
+    color: var(--light-color-alt);
+    background-color: var(--primary-background-color);
+    letter-spacing: 1px;
+    /* This transition is for toggling between light mode and dark mode */
+    transition: background-color .25s , color .25;
+}
+a{
+    text-decoration: none;
+    /* Basically color inherit means that the color 
+    should be inherited from its parent class, 
+    so all a tags should inherit the color from their parents
+     */
+    color: inherit;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+ul{
+    list-style-type: none;
+}
+input,
+button{
+    font: inherit;
+    color: inherit;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+i{
+    font-size: var(--font-size-md)
+    
+}
