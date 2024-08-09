@@ -71,6 +71,54 @@ button{
     outline: none;
 }
 i{
-    font-size: var(--font-size-md)
+    font-size: var(--font-size-md);
+    cursor: pointer;
     
 }
+
+body.light-theme{
+    --light-color: #3d3d3d;
+    --light-color-alt:rgba(0,0,0,.6);
+    --primary-background-color: #fff;
+    --secondary-background-color: #f1f1f1;
+    --hover-light-color:#fff;
+    --transparent-light-color:#252830;
+    --transparent-dark-color: rgba(0,0,0,.1);
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    padding: 0 1.5 rem;
+}
+.btn.place-items-center{
+    /* border: 1px solid red; */
+    display: inline-flex;
+    align-items: center;
+    justify-content:center ;
+}
+.screen-sm-hidden{
+    display: none;
+}
+.header{
+    background-color: var(--secondary-background-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid red;
+    z-index: 999;
+}
+.navbar{
+    display: flex;
+    align-items: cneter;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+.logo{  
+    font-size: var(--font-size-md);
+    color: var(--light-color);
+}
+
