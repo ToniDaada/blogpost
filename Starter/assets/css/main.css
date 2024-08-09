@@ -1,3 +1,6 @@
+/* This was basically just imported from google, defines the font that can be called
+at any time 
+*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 /* Creating some custom properties */
@@ -104,6 +107,7 @@ body.light-theme{
 .header{
     background-color: var(--secondary-background-color);
     position: fixed;
+  
     top: 0;
     left: 0;
     width: 100%;
@@ -121,4 +125,42 @@ body.light-theme{
     font-size: var(--font-size-md);
     color: var(--light-color);
 }
+/* Designs the menu that will be in the hamburger section */
+.menu{
+position: absolute;
+top: 8.5rem;
+right: 1.5rem;
+width: 23rem;
+background-color: var(--secondary-background-color);
+padding: 1.5rem;
+/* Sets the opactity of the links to zero, not visible but its still there and clickable
+will be useful for JavaScript
+*/
+/* opacity: 0; */
+/* This scales down the size of the clickable links so that it isn't clickable
+will be useful for JavaScript
+*/
+/* transform: scale(0); */
+transition: 0.3s ease-in;
+}
 
+.list{
+    display: flex;
+    align-items: center;
+    gap: var(--gap);  
+}
+/* The arranges the links in a colunmn format */
+.menu .list{
+    flex-direction: column;
+}
+/* The link that is active will have this color */
+.list-link.current{
+    color: var(--light-color)
+}
+.close-menu-icon{
+    display: none;
+}
+.list-link:hover{
+    color: var(--light-color);
+    transition: 0.3s ease-in;
+}
