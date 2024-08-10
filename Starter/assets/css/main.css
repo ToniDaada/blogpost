@@ -111,7 +111,7 @@ body.light-theme{
     top: 0;
     left: 0;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     z-index: 999;
 }
 .navbar{
@@ -133,6 +133,8 @@ right: 1.5rem;
 width: 23rem;
 background-color: var(--secondary-background-color);
 padding: 1.5rem;
+
+
 /* Sets the opactity of the links to zero, not visible but its still there and clickable
 will be useful for JavaScript
 */
@@ -148,10 +150,15 @@ transition: 0.3s ease-in;
     display: flex;
     align-items: center;
     gap: var(--gap);  
+
+
 }
 /* The arranges the links in a colunmn format */
 .menu .list{
     flex-direction: column;
+    
+ 
+
 }
 /* The link that is active will have this color */
 .list-link.current{
@@ -160,7 +167,32 @@ transition: 0.3s ease-in;
 .close-menu-icon{
     display: none;
 }
-.list-link:hover{
+.list-link:hover,
+.btn:hover,
+.btn:hover span
+{
+    
     color: var(--light-color);
-    transition: 0.3s ease-in;
+ 
+    border-bottom: 1px solid white;
+    transition: 0.2s ease-in-out;
+    font-size: 20px;
+}
+
+/* I am setting the displa to none because dark mode is the default so the sun 
+icon which is for light theme needs to be showing so that user can change to 
+light theme
+*/
+.moon-icon{
+    display:  none;
+}
+/* When the body has the light theme the sun should be displayed as none  */
+.light-theme .sun-icon{
+    display: none;
+}
+/* You understand rii?
+
+*/
+.light-theme .moon-icon{
+    display: block;
 }
