@@ -204,6 +204,7 @@ Moon theme has to show
  */
 .header.activated{
     box-shadow: 0 1px .5rem var(--transparent-light-color);
+    
 }
 /* Also a box shadow was added to the menu bar too 
     when it is activated
@@ -226,4 +227,9 @@ transform: scale(1);
 /* When the menu is open the close-menu-icon should be displayed */
 .menu-toggled-icon.activated .close-menu-icon{
     display: block;
+}
+
+
+.search{
+    height: 200rem;
 }
