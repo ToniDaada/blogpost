@@ -21,5 +21,25 @@ const scrollHeader=()=>{
         headerElement.classList.remove('activated')
     }
 }
-
 window.addEventListener('scroll',scrollHeader)
+
+// Open menu and search pop up
+const menuToggleIcon = selectElement('#menu-toggle-icon')
+const toggleMenu =()=>{
+    const mobileMenu = selectElement('#menu')
+    mobileMenu.classList.toggle('activated')
+    menuToggleIcon.classList.toggle('activated')
+}
+menuToggleIcon.addEventListener('click',toggleMenu)
+
+
+// Function that switches between themes
+
+const bodyElement = document.body;
+// Basically selecting the id for the dark theme and light theme
+// You see how important that selector was at the beginning
+const themeToggleButton = selectElement('#theme-toggle-btn');
+themeToggleButton.addEventListener('click' , () =>{
+    bodyElement.classList.toggle('light-theme');
+
+})

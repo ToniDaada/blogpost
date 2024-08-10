@@ -87,6 +87,7 @@ body.light-theme{
     --hover-light-color:#fff;
     --transparent-light-color:#252830;
     --transparent-dark-color: rgba(0,0,0,.1);
+    transition: 0.2s ease-in;
 }
 
 .container{
@@ -156,10 +157,7 @@ transition: 0.3s ease-in;
 /* The arranges the links in a colunmn format */
 .menu .list{
     flex-direction: column;
-    
- 
-
-}
+ }
 /* The link that is active will have this color */
 .list-link.current{
     color: var(--light-color)
