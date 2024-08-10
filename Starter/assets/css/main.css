@@ -179,20 +179,51 @@ transition: 0.3s ease-in;
     font-size: 20px;
 }
 
-/* I am setting the displa to none because dark mode is the default so the sun 
+/* I am setting the display to none because dark mode is the default so the sun 
 icon which is for light theme needs to be showing so that user can change to 
 light theme
 */
 .moon-icon{
     display:  none;
 }
-/* When the body has the light theme the sun should be displayed as none  */
+/* When the body has the light theme the sun should be displayed as none  
+important for the JavaScript aspect
+*/
 .light-theme .sun-icon{
     display: none;
 }
 /* You understand rii?
-
+Moon theme has to show
 */
 .light-theme .moon-icon{
+    display: block;
+}
+
+/* I want to add a box shadow to the header when the user scrolls
+    when it is activated
+ */
+.header.activated{
+    box-shadow: 0 1px .5rem var(--transparent-light-color);
+}
+/* Also a box shadow was added to the menu bar too 
+    when it is activated
+*/
+.menu.activated{
+    box-shadow: 1px 1px 1rem var(--transparent-light-color);
+/* Sets the opactity of the links to zero, not visible but its still there and clickable
+will be useful for JavaScript
+*/
+opacity: 1;
+/* This scales down the size of the clickable links so that it isn't clickable
+will be useful for JavaScript
+*/
+transform: scale(1);
+}
+/* When the menu is open the open-menu-icon shouldn't be displayed */
+.menu-toggled-icon.activated .open-menu-icon{
+    display: none;
+}
+/* When the menu is open the close-menu-icon should be displayed */
+.menu-toggled-icon.activated .close-menu-icon{
     display: block;
 }
