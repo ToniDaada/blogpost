@@ -87,7 +87,7 @@ body.light-theme{
     --hover-light-color:#fff;
     --transparent-light-color:#252830;
     --transparent-dark-color: rgba(0,0,0,.1);
-    transition: 0.2s ease-in;
+    transition: 0.3s ease-out;
 }
 
 .container{
@@ -173,7 +173,7 @@ transition: 0.3s ease-in;
     color: var(--light-color);
  
     border-bottom: 1px solid white;
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
     font-size: 20px;
 }
 
