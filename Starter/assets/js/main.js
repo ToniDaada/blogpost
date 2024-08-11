@@ -22,7 +22,6 @@ const scrollHeader=()=>{
     }
 }
 window.addEventListener('scroll',scrollHeader)
-
 // Open menu and search pop up
 const menuToggleIcon = selectElement('#menu-toggle-icon')
 const toggleMenu =()=>{
@@ -31,20 +30,16 @@ const toggleMenu =()=>{
     menuToggleIcon.classList.toggle('activated')
 }
 menuToggleIcon.addEventListener('click',toggleMenu)
-
-
 // Function that switches between themes
-
 const bodyElement = document.body;
 // Basically selecting the id for the dark theme and light theme
 // You see how important that selector was at the beginning
 const themeToggleButton = selectElement('#theme-toggle-btn');
 // This 4 lines are also used to store the currentTheme inside the computer local storage
-const currentTheme =localStorage.getItem('currentTheme')
+const currentTheme =localStorage.getItem('currentTheme');
 if(currentTheme){
     bodyElement.classList.add('light-theme')
 }
-
 themeToggleButton.addEventListener('click' , () =>{
     bodyElement.classList.toggle('light-theme');
 // Now we have to store the theme in local storage so it won't go after refreshing
