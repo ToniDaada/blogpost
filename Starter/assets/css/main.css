@@ -165,16 +165,24 @@ transition: 0.3s ease-in;
 .close-menu-icon{
     display: none;
 }
-.list-link:hover,
-.btn:hover,
-.btn:hover span
-{
-    
+.list-link:hover{
     color: var(--light-color);
  
     border-bottom: 1px solid white;
     transition: 0.3s ease-in-out;
     font-size: 20px;
+}
+
+.btn:hover,
+.btn:hover span
+{
+    color: var(--light-color);
+  
+ 
+   
+    transition: 0.3s ease-in-out;
+    
+  
 }
 
 /* I am setting the display to none because dark mode is the default so the sun 
@@ -243,8 +251,8 @@ transform: scale(1);
     left: 0;
     z-index: 9999;
     display: flex;
-    /* opacity: 0;
-    transform: scale(0); */
+    opacity: 0;
+    transform: scale(0);
     transition: opacity .5s;
 }
 .form-container-inner{
