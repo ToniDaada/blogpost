@@ -256,6 +256,7 @@ transform: scale(1);
     transition: opacity .5s;
 }
 .form-container-inner{
+
     margin: auto;
     display: flex;
     flex-direction: column;
