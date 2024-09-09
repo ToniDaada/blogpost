@@ -5,7 +5,7 @@ const selectElement = selector =>{
     // There the value of all classes that are equal to element
     const element = document.querySelector(selector)
 // If element exists and is selected return element
-// else throw an error. I tried using normal if-else syntax, didn't work 
+// else throw an error. I t  ried using normal if-else syntax, didn't work 
     if(element)
         return element 
         throw new Error(`Something went wrong, make sure that ${selector} exists or is typed correctly.`)
