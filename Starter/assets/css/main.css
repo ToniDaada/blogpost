@@ -251,9 +251,9 @@ transform: scale(1);
     left: 0;
     z-index: 9999;
     display: flex;
-    opacity: 0;
-    transform: scale(0);
-    transition: opacity .5s;
+    /* opacity: 0; */
+    /* transform: scale(0);*/
+     transition: opacity .5s;  
 }
 .form-container-inner{
 
@@ -262,4 +262,22 @@ transform: scale(1);
     flex-direction: column;
     gap:var(--gap);
     text-align: center;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.form-input, .form-btn{
+    display: inline-block;
+    border: 1px solid var(--secondary-background-color);
+    padding: 2.5rem;   
+}
+
+.form-input{
+    border-radius: 1px;
+    border-right: none;
+    width: 100%;
+    background-color: var(--primary-background-color);
 }
