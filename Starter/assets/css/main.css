@@ -281,3 +281,23 @@ transform: scale(1);
     width: 100%;
     background-color: var(--primary-background-color);
 }
+
+.form-btn{
+      border-left: none;
+    background-color: var(--secondary-background-color);
+    width: 8rem;
+}
+
+.form-note{
+    font-size: var(--font-size-xsm);
+    align-self: center;
+}
+
+.form-close-btn{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    border: 1px solid var(--secondary-background-color);
+    width: 4rem;
+    height: 4rem;
+}
