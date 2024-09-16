@@ -170,7 +170,7 @@ transition: 0.3s ease-in;
  
     border-bottom: 1px solid white;
     transition: 0.3s ease-in-out;
-    font-size: 20px;
+     font-size: 20px; 
 }
 
 .btn:hover,
@@ -251,8 +251,8 @@ transform: scale(1);
     left: 0;
     z-index: 9999;
     display: flex;
-    /* opacity: 0; */
-    /* transform: scale(0);*/
+     /* opacity: 0; 
+     transform: scale(0); */
      transition: opacity .5s;  
 }
 .form-container-inner{
@@ -283,15 +283,19 @@ transform: scale(1);
 }
 
 .form-btn{
-      border-left: none;
+    border-left: none;
     background-color: var(--secondary-background-color);
     width: 8rem;
 }
+
+/* The note under the form  */
 
 .form-note{
     font-size: var(--font-size-xsm);
     align-self: center;
 }
+
+/* This was designing the close button made the button go top right */
 
 .form-close-btn{
     position: absolute;
@@ -300,4 +304,5 @@ transform: scale(1);
     border: 1px solid var(--secondary-background-color);
     width: 4rem;
     height: 4rem;
+    display: flex;
 }
