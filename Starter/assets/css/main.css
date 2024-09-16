@@ -152,8 +152,10 @@ transition: 0.3s ease-in;
     align-items: center;
     gap: var(--gap);  
 
-
 }
+
+
+
 /* The arranges the links in a colunmn format */
 .menu .list{
     flex-direction: column;
@@ -227,11 +229,11 @@ will be useful for JavaScript
 transform: scale(1);
 }
 /* When the menu is open the open-menu-icon shouldn't be displayed */
-.menu-toggled-icon.activated .open-menu-icon{
+.menu-toggle-icon.activated .open-menu-icon{
     display: none;
 }
 /* When the menu is open the close-menu-icon should be displayed */
-.menu-toggled-icon.activated .close-menu-icon{
+.menu-toggle-icon.activated .close-menu-icon{
     display: block;
 }
 
@@ -251,8 +253,8 @@ transform: scale(1);
     left: 0;
     z-index: 9999;
     display: flex;
-     /* opacity: 0; 
-     transform: scale(0); */
+      opacity: 0; 
+     transform: scale(0); 
      transition: opacity .5s;  
 }
 .form-container-inner{
@@ -305,4 +307,10 @@ transform: scale(1);
     width: 4rem;
     height: 4rem;
     display: flex;
+}
+
+/* JavaScript styles  when the search form is activated*/
+.search-form-container.activated{
+    opacity: 1;
+    transform: scale(1);
 }

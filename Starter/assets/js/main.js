@@ -1,4 +1,4 @@
-// Defining a function that will allow us to grab elements
+ // Defining a function that will allow us to grab elements
 
 const selectElement = selector =>{
     // The value of whatever that is passed in selector is stored in element variable
@@ -30,6 +30,22 @@ const toggleMenu =()=>{
     menuToggleIcon.classList.toggle('activated')
 }
 menuToggleIcon.addEventListener('click',toggleMenu)
+
+
+// To design the open and close search pop up
+
+const formOpenBtn = selectElement('#search-icon')
+const formCloseBtn = selectElement('#form-close-btn')
+const searchForContainer = selectElement('#search-form-container')
+const searchContainer = selectElement('#search-form-container')
+formOpenBtn.addEventListener('click',()=> searchForContainer.classList.add('activated'))
+formCloseBtn.addEventListener('click',()=> searchForContainer.classList.remove('activated'))
+
+// To close the search pop up using ESC key
+window.addEventListener('keyup', (event) => {
+    if(event.key === 'Escape') searchContainer.classList.remove('activated');
+});
+
 // Function that switches between themes
 const bodyElement = document.body;
 // Basically selecting the id for the dark theme and light theme
