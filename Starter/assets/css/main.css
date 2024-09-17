@@ -349,8 +349,9 @@ transform: scale(1);
     align-items: center;
     gap: var(--gap);
     font-size: var(--font-size-xsm);  
+    
 
-    /* border: 1px solid red; */
+    
 }
 
 .headline{
@@ -360,7 +361,8 @@ transform: scale(1);
     text-align: center;
     padding: .4rem;
     height: 100%;
-    /* border: 1px solid red; */
+
+    
 
 
 }
@@ -372,7 +374,7 @@ transform: scale(1);
 .headline.fancy-border{
     position: relative; 
     overflow: hidden;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .fancy-border::before{
     content: '';
@@ -384,4 +386,17 @@ transform: scale(1);
     background: var(--gradient-color);
     background-size: 50% 100%;
     z-index: 5;
+}
+
+.fancy-border span{
+    position: relative;
+    z-index: 10;
+    display: inline-flex;
+    padding: .6rem 1.5rem;
+    background-color: var(--secondary-background-color);
+}
+
+.featured-article{
+    position:relative;
+    min-height: var(--item-min-height-md);
 }
