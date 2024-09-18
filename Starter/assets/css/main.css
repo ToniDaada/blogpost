@@ -29,6 +29,42 @@ at any time
     --item-min-height-md: 30rem;
 }
 
+/* For the typing animation */
+/* .text-container{
+    display: inline-block;
+    
+
+   margin-top: 70px;
+    width: 70%;
+    padding: 30px;
+    text-align: center;
+    
+    
+} */
+/* .text-container .text{
+     
+    overflow: hidden;
+    
+
+    font-size: 20px;
+    width: 300px;
+    border: 1px solid red; 
+    border-right: 0.15em solid var(--light-color);
+    white-space: nowrap;
+    animation: typing 3s steps(60,) infinite;
+
+
+    
+} */
+/* @keyframes typing{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+
+} */
 
 /* Creating some base styles */
 *{
@@ -107,7 +143,8 @@ body.light-theme{
     display: none;
 }
 
-.section{
+section{
+   
     padding: 5rem;
 }
 .header{
@@ -341,14 +378,21 @@ transform: scale(1);
 .featured-content{
     
      gap: 2rem  ;
+   
 }
 .headline-banner{
     background-color: var(--secondary-background-color);
     margin-bottom: 2rem;
+    margin-top: 7.4rem;
     display: flex;
     align-items: center;
     gap: var(--gap);
     font-size: var(--font-size-xsm);  
+    font-size: var(--font-size-xsm);  
+    
+
+    
+    font-size: var(--font-size-xsm);      
     
 
     
@@ -435,6 +479,10 @@ transform: scale(1);
     color: var(--hover-light-color);
     
 }
+.article:hover .article-data-spacer{
+    background-color: var(--hover-light-color);
+    /* color: var(--hover-light-color);     */
+}
 .article-data{
     /* border: 1px solid   red    ; */
     /* justify-content: space-between; */
@@ -451,4 +499,61 @@ transform: scale(1);
     height: .5rem;
     background-color: var(--light-color-alt);
     transform: rotate(45deg) ;
+}
+.title{
+   width: 100%;
+    /* border: 1px solid red; */
+
+    color: var(--light-color);
+}
+.article-title{
+ 
+
+    font-size: var(--font-size-md);
+}
+
+.sidebar{
+    background-color: var(--secondary-background-color);
+    padding: 2.5rem;
+    }
+
+.trending-news-box{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    padding-block: 2rem;
+    /* border: 1px solid var(--transparent-light-color); */
+}
+.trending-news-box:last-of-type{
+    border-bottom:none;
+}
+.trending-news-image-box{
+    /* border: 1px solid red; */
+position: relative;
+width: 100%;
+height: var(--item-min-height-md);
+}
+.featured-content-title{
+    font-size: var(--font-size-md);
+    text-align: center;
+    padding: 1rem;
+}
+.trending-number{
+        /* border: 1px solid red; */
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    z-index: 15;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--secondary-background-color);
+    color: var(--light-color);
+    border-radius: 50%;
+}
+
+.trending-new-data .article-title{
+    font-size:  var(--font-size-sm);
+}
+.trending-news-box:hover .article-title{
+    color: var(--light-color-alt);
 }
