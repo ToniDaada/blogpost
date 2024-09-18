@@ -9,6 +9,7 @@ const selectElement = selector =>{
     if(element)
         return element 
         throw new Error(`Something went wrong, make sure that ${selector} exists or is typed correctly.`)
+      
 }
 
 // Adding the styles that trigger when scrolling

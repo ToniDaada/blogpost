@@ -383,7 +383,7 @@ transform: scale(1);
 .headline-banner{
     background-color: var(--secondary-background-color);
     margin-bottom: 2rem;
-    margin-top: 7.4rem;
+    /* margin-top: 7.4rem; */
     display: flex;
     align-items: center;
     gap: var(--gap);
@@ -474,6 +474,8 @@ transform: scale(1);
     transition: background-color .5s;
 }
 
+
+
 .article:hover .article-data-container{
     background-color: var(--hover-dark-color);
     color: var(--hover-light-color);
@@ -486,6 +488,7 @@ transform: scale(1);
 .article-data{
     /* border: 1px solid   red    ; */
     /* justify-content: space-between; */
+    margin-bottom: 1rem;
     align-items: center;
     padding: 1rem 0;
     display: flex;
@@ -512,6 +515,8 @@ transform: scale(1);
     font-size: var(--font-size-md);
 }
 
+
+/* Sidebar */
 .sidebar{
     background-color: var(--secondary-background-color);
     padding: 2.5rem;
@@ -527,11 +532,12 @@ transform: scale(1);
 .trending-news-box:last-of-type{
     border-bottom:none;
 }
-.trending-news-image-box{
+.trending-news-img-box{
     /* border: 1px solid red; */
 position: relative;
 width: 100%;
-height: var(--item-min-height-md);
+height: var(--item-min-height-sm);
+/* object-fit: contain;  */
 }
 .featured-content-title{
     font-size: var(--font-size-md);
@@ -556,4 +562,42 @@ height: var(--item-min-height-md);
 }
 .trending-news-box:hover .article-title{
     color: var(--light-color-alt);
+}
+
+
+
+/* Quick Read */
+.section-title{
+    position: relative;
+    font-size: var(--font-size-md);
+    margin-bottom: 6rem;
+    /* border: 1px solid red; */
+    }
+.section-title::before{
+    content: attr(data-name);
+    font-size: var(--font-size-lg);
+    text-transform: uppercase;
+    opacity: .1;
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+}
+
+.article.swiper-slide{
+    height: 40rem;
+}
+.swiper-wrapper{
+    height: auto;
+}
+.swiper-controls{
+    width: 3.5rem ;
+    height: 3.5rem;
+    background-color: var(--secondary-background-color);
+
+}
+
+.swiper-controls::after{
+    font-size: 1.6rem;
+    color: var(--light-color);
+    
 }
